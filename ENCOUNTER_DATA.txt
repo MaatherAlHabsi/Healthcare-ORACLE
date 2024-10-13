@@ -1,0 +1,119 @@
+CREATE TABLE encounter_data (
+    encounter_id INT PRIMARY KEY,
+    patient_id CHAR(5),
+    provider_id CHAR(4),
+    location_id CHAR(5),
+    date_id INT,
+    diagnosis_code VARCHAR(10),
+    procedure_code VARCHAR(10),
+    duration_minutes INT,
+    encounter_type VARCHAR(20),
+
+    CONSTRAINT fk_patient_encounter_data FOREIGN KEY (patient_id) REFERENCES patient(patient_id),
+    CONSTRAINT fk_provider_encounter_data FOREIGN KEY (provider_id) REFERENCES provider(provider_id),
+    CONSTRAINT fk_location_encounter_data FOREIGN KEY (location_id) REFERENCES location(location_id),
+    CONSTRAINT fk_time_encounter_data FOREIGN KEY (date_id) REFERENCES time(date_id),
+    CONSTRAINT fk_diagnosis_encounter_data FOREIGN KEY (diagnosis_code) REFERENCES diagnosis(diagnosis_code)
+);
+
+
+INSERT INTO encounter_data VALUES(1, 1236, 1234, 'L004', 1, 'D001', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(2, 1241, 5678,'L005', 2, 'D002', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(3, 1242, 9101,'L006', 3, 'D003', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(4, 1243, 1231,'L007', 4, 'D004', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(5, 1244, 1451,'L008', 5, 'D005', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(6, 1245, 1671, 'L009', 6, 'D005', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(7, 1256,  8190, 'L010',7, 'D006', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(8, 1311, 2122,'L011', 8, 'D009', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(9, 1312, 3242, 'L012', 9, 'D008', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(10, 1321, 2627,  'L013', 10, 'D007', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(11, 1322, 2230,  'L014', 11, 'D010', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(12, 1323, 3133, 'L015', 12, 'D011', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(13, 1324, 3435,  'L016', 13, 'D012', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(14, 1325, 3378, 'L017',14, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(15, 1326, 3940,  'L018', 15, 'D014', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(16, 1327, 4143,  'L019', 16, 'D015', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(17, 1328, 4445,  'L020', 17, 'D016', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(18, 1329, 4678,  'L021', 18, 'D017', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(19, 1330, 4940,  'L022', 19, 'D018', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(20, 1351, 5155,  'L022', 20, 'D019', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(21, 1352, 3545,  'L024', 21, 'D020', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(22, 1353, 6616,  'L025', 22, 'D021', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(23, 1354, 3665,  'L026', 23, 'D022', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(24, 1355, 6768,  'L027', 24, 'D023', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(25, 1357, 9670,  'L028', 25, 'D024', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(26, 1358, 7172,  'L029', 26, 'D025', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(27, 1361, 7374,  'L030', 27, 'D026', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(28, 1362, 7567,'L030', 28, 'D027', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(29, 1363, 7778, 'L031', 29, 'D028', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(30,1364, 7980, 'L032', 30, 'D029', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(31, 1365, 8182, 'L033', 31, 'D031', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(32, 1367, 8384, 'L034', 32, 'D030', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(33, 1368, 8586, 'L035', 33, 'D032', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(34, 1369, 8688, 'L0306', 34, 'D033', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(35, 1371, 8990, 'L037', 35, 'D034', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(36, 1372, 9192,'L038', 36, 'D035', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(37, 1373, 9394, 'L039', 37, 'D036', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(38, 1374, 9596,'L040', 38, 'D037', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(39, 1375, 9798, 'L041', 39, 'D038', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(40, 1376, 9910,'L042', 40, 'D039', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(41, 1377, 1012, 'L043', 41, 'D041', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(42,1378, 2234, 'L044', 42, 'D040', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(43, 1379, 7766,'L045', 43, 'D041', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(44, 1381, 3344,'L046', 44, 'D042', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(45, 1382, 8899,'L047', 44,'D049', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(52,1390,8090, 'L047', 52, 'D050', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(53, 1391, 7060,'L048', 53, 'D009', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(54, 1392, 2436,'L049', 54, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(55, 1393, 9910,'L049', 55, 'D017', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(56, 1394, 8899, 'L047', 56, 'D021', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(57, 1395, 8990, 'L048', 57, 'D025', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(58, 1396, 2436, 'L048', 58, 'D029', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(59, 1397, 9910,'L049', 59, 45, 'D043', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(46, 1383, 2235, 'L048', 46, 'D044', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(47, 1384, 2545,'L049', 47, 'D045', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(48, 1385, 2989,'L049',48, 'D046', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(49, 1386, 4587, 'L050', 49, 'D047', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(50, 1387, 1978,'L042', 50, 'D048', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(51, 1388,2950, 'L037', 5, 'D033', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(60, 1398, 8899, 'L042', 60, 'D037', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(61, 1399, 9910,'L037', 61, 'D001', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(62, 1400, 8990,'L039', 62, 'D005', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(63, 1401, 1978, 'L033', 63, 'D009', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(64,1402, 2235,'L050', 64, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(65, 1403, 4587,'L037', 65, 'D017', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(66, 1404, 8899, 'L039', 66, 'D021', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(67, 1418, 1978,'L028', 67, 'D025', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(68,1420, 8990,'L018', 68, 'D029', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(69, 1421, 2235,'L027', 69, 'D033', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(70, 1422, 4587,'L036', 70, 'D037', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(71, 1423, 4587,'L034', 1, 'D001', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(72, 1424, 2235,'L045', 2, 'D005', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(73, 1425, 1978, 'L045', 3, 'D009', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(74, 1426, 9910, 'L039', 4, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(75, 1428, 8899, 'L014', 5, 'D017', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(76, 1429, 4587, 'L016', 6, 'D021', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(77, 1430, 2235, 'L012', 7, 'D025', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(78, 1431, 8990, 'L050', 8, 'D029', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(79, 1236, 9910, 'L041', 9, 'D033', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(80, 1323, 1978,'L040', 10, 'D037', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(81, 1385, 2545,'L033', 1, 'D001', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(82, 1243, 4587, 'L033', 32, 'D005', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(83, 1236, 3344, 'L030', 23, 'D009', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(84, 104, 1451,'L030', 34, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(85, 1243, 1978, 'L050', 15, 'D017', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(86, 1323, 1451, 'L050', 46, 'D021', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(87, 1385, 2545, 'L034', 27, 'D025', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(98, 1374, 3344,'L034', 38, 'D029', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(99, 1424, 1451, 'L020', 9, 'D033', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(100,  1311,1451, 'L020', 10, 'D037', 'P010', 55, 'Outpatient');
+INSERT INTO encounter_data VALUES(101, 1236, 9910,'L020', 11, 'D001', 'P001', 30, 'Outpatient');
+INSERT INTO encounter_data VALUES(102,  1311, 2545, 'L014', 32, 'D005', 'P002', 45, 'Inpatient');
+INSERT INTO encounter_data VALUES(103, 1424, 1451,'L014', 23, 'D009', 'P003', 60, 'Emergency');
+INSERT INTO encounter_data VALUES(104,1323, 3344, 'L008', 54, 'D013', 'P004', 40, 'Outpatient');
+INSERT INTO encounter_data VALUES(105,  1311, 9910, 'L006', 45, 'D017', 'P005', 55, 'Inpatient');
+INSERT INTO encounter_data VALUES(106, 1236, 1978, 'L042', 66, 'D021', 'P006', 75, 'Emergency');
+INSERT INTO encounter_data VALUES(107, 1243, 2545, 'L005', 27, 'D025', 'P007', 35, 'Outpatient');
+INSERT INTO encounter_data VALUES(108, 1374, 8899, 'L005', 48, 'D029', 'P008', 50, 'Inpatient');
+INSERT INTO encounter_data VALUES(109, 1243, 1978, 'L042', 9, 'D033', 'P009', 65, 'Emergency');
+INSERT INTO encounter_data VALUES(110, 1374, 2545, 'L003', 10, 'D037', 'P010', 55, 'Outpatient');

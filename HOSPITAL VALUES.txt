@@ -1,0 +1,167 @@
+CREATE TABLE HOSPITAL (
+  hospital_id INT PRIMARY KEY,
+  hospital_name VARCHAR(40),
+  City VARCHAR(30),
+  Wilaya VARCHAR(30));
+
+
+INSERT INTO HOSPITAL (hospital_id, hospital_name, City, Wilaya)
+VALUES (100, 'Al Nahdha Hospital', 'Muscat', 'Muscat');
+
+INSERT INTO HOSPITAL (hospital_id, hospital_name, City, Wilaya)
+VALUES (120, 'Royal Hospital', 'Muscat', 'Seeb');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (140, 'Aster Al Raffah Hospital', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (200, 'Lifeline Hospital', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (250, 'Al Hayat International ', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (300, 'Lifeline', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (310, 'Bader Al Sama ', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (340, 'Sultan Qaboos', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (355, 'Al Hayat International', 'Al Ghubrah ', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (390, 'Muscat Private', 'Al Ansab', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (400, 'NMC Speciality ', 'Al Ghubrah ', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (420, 'Gulf Specialized ', 'Qurm', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (430, 'Burjeel Hospital ', 'Qurm', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (466, 'Al Sharqia Hospital', 'Sinaw', 'Al Sharqia ');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (480, 'Al sharqia Dental Smile', 'Bidiyah', 'Al Sharqia');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (493, 'Al Shumoos Hospital ', 'Barka', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (500, 'Jawharat AlSharqia', 'Sinaw', 'Al Sharqia');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (580, 'Bader Al Samaa', 'Nizwa', 'Al Dakhiliyah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (570, 'Farq Health Center', 'Nizwa', 'Al Dakhiliyah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (501, 'Daris Medical Center', 'Nizwa', 'Al Dakhiliyah');
+
+INSERT INTO HOSPITAL (hospital_id, hospital_name, City, Wilaya)
+VALUES (515, 'Al Nahdha Hospital', 'Muscat', 'Muscat');
+
+INSERT INTO HOSPITAL (hospital_id, hospital_name, City, Wilaya)
+VALUES (600, 'Royal Hospital', 'Muscat', 'Seeb');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (604, 'Aster Al Raffah Hospital', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (618, 'Lifeline Hospital', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (620, 'Al Hayat International ', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (635, 'Lifeline', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (640, 'Bader Al Sama ', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (655, 'Sultan Qaboos', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (668, 'Al Hayat International', 'Al Ghubrah ', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (695, 'Muscat Private', 'Al Ansab', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (700, 'NMC Speciality ', 'Al Ghubrah ', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (712, 'Gulf Specialized ', 'Qurm', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (730, 'Burjeel Hospital ', 'Qurm', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (759, 'Al Sharqia Hospital', 'Sinaw', 'Al Sharqia ');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (795, 'Al sharqia Dental Smile', 'Bidiyah', 'Al Sharqia');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (738, 'Al Shumoos Hospital ', 'Barka', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (797, 'Jawharat AlSharqia', 'Sinaw', 'Al Sharqia');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (841, 'Bader AlSamaa', 'Nizwa', 'Al Dakhiliyah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (800, 'Farq Health', 'Nizwa', 'Al Dakhiliyah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (854, 'Daris Medical', 'Nizwa', 'Al Dakhiliyah');
+
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (1234, 'Lifeline Hospital', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (950, 'Al Hayat International ', 'Sohar', 'Al Batinah');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (913, 'Lifeline', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (932, 'Sultan Qaboos', 'Salalah', 'Dhofar');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (954, 'Muscat Private', 'Al Ansab', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (987, 'NMC Speciality ', 'Al Ghubrah ', 'Muscat');
+
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (999, 'Al Sharqia Hospital', 'Sinaw', 'Al Sharqia ');
+
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (895, 'Al Shumoos Hospital ', 'Barka', 'Muscat');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (890, 'Jawharat AlSharqia', 'Sinaw', 'Al Sharqia');
+
+INSERT INTO Hospital (hospital_id, hospital_name, City, Wilaya)
+VALUES (860, 'Bader AlSamaa', 'Nizwa', 'Al Dakhiliyah');
+
+
+
+
+
+
+
+

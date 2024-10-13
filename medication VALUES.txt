@@ -1,0 +1,127 @@
+CREATE TABLE medication (
+
+    medication_id INT PRIMARY KEY,
+
+    medicine_name VARCHAR(35),
+
+    company VARCHAR(35),
+
+    brand_name VARCHAR(30),
+
+    composition VARCHAR(38),
+
+    generic_name VARCHAR(35),
+
+    side_effects VARCHAR(40),
+
+    dosage_form VARCHAR(25),
+
+    strength VARCHAR(25),
+
+    indications VARCHAR(36)
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO medication VALUES(1, 'HeartWell', 'Pharmaceuticals Inc.', 'CardioCare', 'Aspirin + Clopidogrel', 'CardioRelief', 'Palpitations, Dizziness', 'Tablet', '75mg', 'Cardiovascular health');
+
+INSERT INTO medication VALUES    (2, 'DigestEase', 'DigestiPharm Corp.', 'EasyDigest', 'Simethicone + Dicyclomine', 'GastroEase', 'Indigestion, Gas', 'Chewable Tablet', '10mg', 'Digestive comfort');
+
+INSERT INTO medication VALUES    (3, 'PainRelieve', 'PharmCo', 'PainEase', 'Ibuprofen + Acetaminophen', 'PainX', 'Nausea, Headache', 'Capsule', '25mg', 'Pain management');
+
+INSERT INTO medication VALUES    (4, 'AllergyGuard', 'WellnessMeds', 'PureShield', 'Loratadine + Pseudoephedrine', 'AllerRelief', 'Itching, Sneezing', 'Nasal Spray', '5mg/ml', 'Allergy relief');
+
+INSERT INTO medication VALUES    (5, 'VisionPro', 'OphthaPharm', 'EyeFocus', 'Carboxymethylcellulose + Naphazoline', 'ClearSight', 'Blurred vision, Dry eyes', 'Eye Drops', '3mg/ml', 'Eye health');
+
+INSERT INTO medication VALUES    (6, 'CoughRelief', 'MediLife', 'CoughAway', 'Dextromethorphan + Guaifenesin', 'ReliefCough', 'Drowsiness, Sore throat', 'Syrup', '15mg/ml', 'Cough relief');
+
+INSERT INTO medication VALUES    (7, 'JointFlexPlus', 'OrthoPharm', 'FlexiRelief Plus', 'Diclofenac + Menthol', 'JointEase', 'Joint pain, Nausea', 'Topical Cream', '10%', 'Joint inflammation');
+
+INSERT INTO medication VALUES    (8, 'SkinRenew', 'Dermaceuticals', 'YouthfulGlow', 'Retinol + Hyaluronic Acid', 'AgelessSkin', 'Skin wrinkles, Redness', 'Serum', '5%', 'Skin rejuvenation');
+
+ INSERT INTO medication VALUES   (9, 'StressRelief', 'NeuroPharma', 'CalmMind', 'Valerian Root + L-Theanine', 'CalmPlex', 'Insomnia, Nervousness', 'Tablet', '30mg', 'Stress management');
+
+ INSERT INTO medication VALUES   (10, 'LiverSupport', 'HepatoMeds', 'LiverVitalize', 'Silymarin + Vitamin E', 'LiverGuard', 'Nausea, Jaundice', 'Liquid', '15mg/ml', 'Liver health');
+
+ INSERT INTO medication VALUES   (11, 'ImmuneDefense', 'WellnessMeds', 'DefensePro', 'Vitamin C + Zinc', 'ImmunoGuard', 'Fever, Headache', 'Capsule', '40mg', 'Immune system support');
+
+ INSERT INTO medication VALUES   (12, 'AntiAgingAdvanced', 'WellnessMeds', 'AgelessRadiance', 'Peptides + Collagen', 'YouthfulBlend', 'Fine lines, Fatigue', 'Cream', '15%', 'Advanced anti-aging');
+
+ INSERT INTO medication VALUES   (13, 'MigraineReliefExtra', 'NeuroPharma', 'MigraineControl', 'Sumatriptan + Naproxen', 'MigraineX', 'Nausea, Sensitivity to light', 'Tablet', '20mg', 'Enhanced migraine management');
+
+ INSERT INTO medication VALUES   (14, 'WeightLossUltra', 'FitPharma', 'SlimElite', 'Orlistat + Caffeine', 'SlimX', 'Dizziness, Dry mouth', 'Capsule', '75mg', 'Ultra weight loss');
+
+ INSERT INTO medication VALUES   (15, 'ProbioticOptimal', 'DigestiCare', 'GutOptimize', 'Lactobacillus + Bifidobacterium', 'ProBioOptima', 'Gas, Bloating', 'Probiotic Capsule', '10 billion CFU', 'Optimal digestive health');
+
+ INSERT INTO medication VALUES   (16, 'JointCareAdvanced', 'OrthoPharm', 'FlexiJoint Advanced', 'Glucosamine + Chondroitin', 'JointFlexAdvance', 'Joint stiffness, Nausea', 'Tablet', '30mg', 'Advanced joint mobility');
+
+ INSERT INTO medication VALUES   (17, 'HeartCarePlus', 'CardioMeds', 'CardioGuard Plus', 'Losartan + Hydrochlorothiazide', 'CardioPlus', 'Palpitations, Dizziness', 'Tablet', '100mg', 'Comprehensive cardiovascular support');
+
+ INSERT INTO medication VALUES   (18, 'DigestOptimal', 'DigestiCare', 'EasyDigest Optimal', 'Ranitidine + Pancrelipase', 'DigestProOptimal', 'Indigestion, Gas', 'Chewable Tablet', '20mg', 'Optimal digestive comfort');
+
+ INSERT INTO medication VALUES   (19, 'PainRelieveUltra', 'PharmCo', 'PainEase Ultra', 'Morphine + Oxycodone', 'UltraPainRelief', 'Nausea, Headache', 'Capsule', '50mg', 'Ultra pain management');
+
+ INSERT INTO medication VALUES   (20, 'AllergyShieldAdvanced', 'WellnessMeds', 'PureShield Advanced', 'Desloratadine + Fluticasone', 'AdvancedAllerShield', 'Itching, Sneezing', 'Nasal Spray', '7.5mg/ml', 'Advanced allergy relief');
+
+ INSERT INTO medication VALUES   (21, 'VisionOptimal', 'OphthaPharm', 'EyePeak', 'Lutein + Zeaxanthin', 'OptiSight', 'Blurred vision, Dry eyes', 'Eye Capsule', '10mg', 'Optimal eye health');
+
+ INSERT INTO medication VALUES   (22, 'CoughControlExtra', 'MediLife', 'CoughControl Plus', 'Codeine + Bromhexine', 'ControlCoughExtra', 'Drowsiness, Sore throat', 'Syrup', '20mg/ml', 'Extra strength cough control');
+
+INSERT INTO medication VALUES    (23, 'JointReliefUltra', 'OrthoPharm', 'FlexiJoint Ultra', 'Methylsulfonylmethane + Boswellia', 'UltraJointRelief', 'Joint pain, Nausea', 'Topical Gel', '15%', 'Ultra joint relief');
+
+ INSERT INTO medication VALUES   (24, 'SkinRevitalizePlus', 'Dermaceuticals', 'GlowRevive Plus', 'Hyaluronic Acid + Vitamin C', 'RevitalizePlus', 'Skin wrinkles, Redness', 'Cream', '20%', 'Advanced skin revitalization');
+
+ INSERT INTO medication VALUES   (25, 'StressEaseAdvanced', 'NeuroPharma', 'CalmEase Advanced', 'Rhodiola Rosea + Ashwagandha', 'EaseStressAdvanced', 'Insomnia, Nervousness', 'Tablet', '40mg', 'Advanced stress relief');
+
+ INSERT INTO medication VALUES   (26, 'LiverGuardExtra', 'HepatoMeds', 'LiverShield Extra', 'N-Acetylcysteine + Milk Thistle', 'ExtraLiverGuard', 'Nausea, Jaundice', 'Liquid', '20mg/ml', 'Extra strength liver support');
+
+ INSERT INTO medication VALUES   (27, 'ImmunoBoostUltra', 'WellnessMeds', 'BoostImmuno Ultra', 'Echinacea + Elderberry', 'UltraImmunoBoost', 'Fever, Headache', 'Capsule', '50mg', 'Ultra immune system support');
+
+INSERT INTO medication VALUES    (28, 'AntiAgingSupreme', 'WellnessMeds', 'AgelessSupreme', 'Retinol + Peptides', 'SupremeAgeless', 'Fine lines, Fatigue', 'Cream', '20%', 'Supreme anti-aging');
+
+ INSERT INTO medication VALUES   (29, 'MigraineControlExtra', 'NeuroPharma', 'MigraineControl Plus', 'Butorphanol + Prochlorperazine', 'ControlMigraineExtra', 'Nausea, Sensitivity to light', 'Tablet', '25mg', 'Extra strength migraine control');
+
+ INSERT INTO medication VALUES   (30, 'WeightLossPro', 'FitPharma', 'SlimPro', 'Garcinia Cambogia + Green Tea Extract', 'ProSlim', 'Dizziness, Dry mouth', 'Capsule', '100mg', 'Pro weight loss');
+
+ INSERT INTO medication VALUES   (31, 'HeartWell', 'Pharmaceuticals Inc.', 'CardioCare', 'Aspirin + Clopidogrel', 'CardioRelief', 'Palpitations, Dizziness', 'Tablet', '75mg', 'Cardiovascular health');
+
+ INSERT INTO medication VALUES   (32, 'DigestEase', 'DigestiPharm Corp.', 'EasyDigest', 'Simethicone + Dicyclomine', 'GastroEase', 'Indigestion, Gas', 'Chewable Tablet', '10mg', 'Digestive comfort');
+
+ INSERT INTO medication VALUES   (33, 'PainRelieve', 'PharmCo', 'PainEase', 'Ibuprofen + Acetaminophen', 'PainX', 'Nausea, Headache', 'Capsule', '25mg', 'Pain management');
+
+ INSERT INTO medication VALUES   (34, 'AllergyGuard', 'WellnessMeds', 'PureShield', 'Loratadine + Pseudoephedrine', 'AllerRelief', 'Itching, Sneezing', 'Nasal Spray', '5mg/ml', 'Allergy relief');
+
+ INSERT INTO medication VALUES   (35, 'VisionPro', 'OphthaPharm', 'EyeFocus', 'Carboxymethylcellulose + Naphazoline', 'ClearSight', 'Blurred vision, Dry eyes', 'Eye Drops', '3mg/ml', 'Eye health');
+
+ INSERT INTO medication VALUES   (36, 'CoughRelief', 'MediLife', 'CoughAway', 'Dextromethorphan + Guaifenesin', 'ReliefCough', 'Drowsiness, Sore throat', 'Syrup', '15mg/ml', 'Cough relief');
+
+ INSERT INTO medication VALUES   (37, 'JointFlexPlus', 'OrthoPharm', 'FlexiRelief Plus', 'Diclofenac + Menthol', 'JointEase', 'Joint pain, Nausea', 'Topical Cream', '10%', 'Joint inflammation');
+
+  INSERT INTO medication VALUES  (38, 'SkinRenew', 'Dermaceuticals', 'YouthfulGlow', 'Retinol + Hyaluronic Acid', 'AgelessSkin', 'Skin wrinkles, Redness', 'Serum', '5%', 'Skin rejuvenation');
+
+ INSERT INTO medication VALUES   (39, 'StressRelief', 'NeuroPharma', 'CalmMind', 'Valerian Root + L-Theanine', 'CalmPlex', 'Insomnia, Nervousness', 'Tablet', '30mg', 'Stress management');
+
+ INSERT INTO medication VALUES   (40, 'LiverSupport', 'HepatoMeds', 'LiverVitalize', 'Silymarin + Vitamin E', 'LiverGuard', 'Nausea, Jaundice', 'Liquid', '15mg/ml', 'Liver health');
+
+ INSERT INTO medication VALUES  (41, 'ImmuneDefense', 'WellnessMeds', 'DefensePro', 'Vitamin C + Zinc', 'ImmunoGuard', 'Fever, Headache', 'Capsule', '40mg', 'Immune system support');
+
+ INSERT INTO medication VALUES   (42, 'AntiAgingAdvanced', 'WellnessMeds', 'AgelessRadiance', 'Peptides + Collagen', 'YouthfulBlend', 'Fine lines, Fatigue', 'Cream', '15%', 'Advanced anti-aging');
+
+ INSERT INTO medication VALUES   (43, 'MigraineReliefExtra', 'NeuroPharma', 'MigraineControl', 'Sumatriptan + Naproxen', 'MigraineX', 'Nausea, Sensitivity to light', 'Tablet', '20mg', 'Enhanced migraine management');
+
+ INSERT INTO medication VALUES   (44, 'WeightLossUltra', 'FitPharma', 'SlimElite', 'Orlistat + Caffeine', 'SlimX', 'Dizziness, Dry mouth', 'Capsule', '75mg', 'Ultra weight loss');
+
+ INSERT INTO medication VALUES   (45, 'ProbioticOptimal', 'DigestiCare', 'GutOptimize', 'Lactobacillus + Bifidobacterium', 'ProBioOptima', 'Gas, Bloating', 'Probiotic Capsule', '10 billion CFU', 'Optimal digestive health');
+

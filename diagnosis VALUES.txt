@@ -1,0 +1,117 @@
+CREATE TABLE diagnosis (
+
+    diagnosis_code VARCHAR(10) PRIMARY KEY,
+
+    description VARCHAR(25),
+
+    category VARCHAR(20),
+
+    severity VARCHAR(10)
+
+);
+
+
+
+
+
+
+
+INSERT INTO diagnosis VALUES('D001', 'Headache', 'Neurology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D002', 'Fever', 'Internal Medicine', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D003', 'Fracture', 'Orthopedics', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D004', 'Cough', 'Pulmonology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D005', 'Hypertension', 'Cardiology', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D006', 'Diabetes', 'Endocrinology', 'Severe');
+
+INSERT INTO diagnosis VALUES   ('D007', 'Allergy', 'Immunology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D008', 'Gastritis', 'Gastroenterology', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D009', 'Migraine', 'Neurology', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D010', 'Common Cold', 'Infectious Disease', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D011', 'Arthritis', 'Rheumatology', 'Moderate');
+
+INSERT INTO diagnosis VALUES   ('D012', 'Asthma', 'Pulmonology', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D013', 'Anemia', 'Hematology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D014', 'Bronchitis', 'Pulmonology', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D015', 'Osteoporosis', 'Endocrinology', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D016', 'Gout', 'Rheumatology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D017', 'Sinusitis', 'Otolaryngology', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D018', 'Eczema', 'Dermatology', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D019', 'Kidney Stones', 'Nephrology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D020', 'Pneumonia', 'Pulmonology', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D021', 'Thyroid Disorder', 'Endocrinology', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D022', 'Urinary Tract Infection', 'Urology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D023', 'Conjunctivitis', 'Ophthalmology', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D024', 'Psoriasis', 'Dermatology', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D025', 'Rheumatoid Arthritis', 'Rheumatology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D026', 'Gallstones', 'Gastroenterology', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D027', 'Depression', 'Psychiatry', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D028', 'Hyperthyroidism', 'Endocrinology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D029', 'Chronic Fatigue Syndrome', 'Internal Medicine', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D030', 'Meningitis', 'Infectious Disease', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D031', 'Ovarian Cancer', 'Oncology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D032', 'Hepatitis', 'Infectious Disease', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D033', 'Epilepsy', 'Neurology', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D034', 'Acne', 'Dermatology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D035', 'Gastric Ulcer', 'Gastroenterology', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D036', 'Schizophrenia', 'Psychiatry', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D037', 'Lupus', 'Rheumatology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D038', 'Cataract', 'Ophthalmology', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D039', 'Chronic Kidney Disease', 'Nephrology', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D040', 'Panic Disorder', 'Psychiatry', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D041', 'Hernia', 'General Surgery', 'Moderate');
+
+INSERT INTO diagnosis VALUES    ('D042', 'Gingivitis', 'Dentistry', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D043', 'Osteoarthritis', 'Rheumatology', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D044', 'Tuberculosis', 'Infectious Disease', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D045', 'Thyroid Cancer', 'Oncology', 'Severe');
+
+ INSERT INTO diagnosis VALUES   ('D046', 'Laryngitis', 'Otolaryngology', 'Mild');
+
+INSERT INTO diagnosis VALUES    ('D047', 'Malaria', 'Infectious Disease', 'Moderate');
+
+ INSERT INTO diagnosis VALUES   ('D048', 'Celiac Disease', 'Gastroenterology', 'Severe');
+
+INSERT INTO diagnosis VALUES    ('D049', 'Insomnia', 'Sleep Medicine', 'Mild');
+
+ INSERT INTO diagnosis VALUES   ('D050', 'Rickets', 'Endocrinology', 'Moderate');

@@ -1,0 +1,175 @@
+
+CREATE TABLE PROVIDER (
+  provider_id CHAR(4) PRIMARY KEY,
+  first_name VARCHAR(13),
+  last_name VARCHAR(12),
+  specialty VARCHAR(25),
+  hospital_affiliation VARCHAR(40),
+  contact_number VARCHAR(9),
+  email VARCHAR(35)
+);
+
+
+INSERT INTO Provider(provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1234, 'John', 'Doe', 'Cardiology', 'Bader AlSamaa', '99223344', 'johndoe@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (5678, 'Ali', 'Abdullah', 'Surgical', 'Al Nahdha Hospital', '98849300', 'aliabdullah@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9101, 'Ahmed', 'Ali', 'Pediatrics', 'Al Nahdha Hospital', '98849300', 'ahmedali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1231, 'Rawan ', 'Mohammed', 'Surgical','Al Nahdha Hospital', '98829300', 'rawanmohammed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1451, 'Rayan', 'Ahmed', 'Pharmacology', 'Royal Hospital', '98849900', 'rayanahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1671, 'Hamed', 'Abdullah', 'Pediatrics', 'Royal Hospital', '98809534', 'hamedabdullah@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8190, 'Said', 'Bader',  'Cardiology', 'Royal Hospital', '92040123 ', 'saidbader@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2122, 'Bader', 'Salim', 'Pediatrics', 'Royal Hospital', '91111416', 'badersalim@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3242, 'Omar', 'Hilal', 'Surgical', 'Lifeline', '92224862', 'omarhilal@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2627, 'Noor ', 'Rashid',  'Cardiology', 'Lifeline', '91123456', 'noorrashid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2230, 'Abrar', 'Ahmed', 'Pediatrics', 'Lifeline', '98979643', 'abrarahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3133, 'Moosa', 'Ali',  'Pharmacology', 'Lifeline', '93876354', 'moosaali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3435, 'Saif', 'Salim', 'Pediatrics', 'Al Hayat International', '99375834', 'saifsalim@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3378, 'Jalal', 'Sultan ','Surgical', 'Al Hayat International', '90285743', 'jalalsultan@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3940, 'Mooza', 'Ali', 'Pharmacology','Al Hayat International', '90285763', 'moozaali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (4143, 'Abdullah', 'Ahmed', 'Pediatrics', 'Al Hayat International', '91235678', 'abdullahahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (4445, 'Abdullah', 'Ali',  'Cardiology', 'Gulf Specialized ', '92030405', 'abdullahali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (4678, 'Hoor', 'Jaber', 'Surgical', 'Gulf Specialized ', '91209384', 'hoorjaber@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (4940, 'Amena', 'Adnan', 'Pediatrics', 'Gulf Specialized ', '97654321', 'amenaadnan@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (5155, 'Deema', 'Khalid','Pharmacology', 'Gulf Specialized ', '91234567', 'deemakhalid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3545, 'Noof', 'Salim',  'Cardiology', 'Burjeel Hospital ', '90987654', 'noofsalim@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (6616, 'Ameer', 'Ahmed', 'Pediatrics','Burjeel Hospital ' , '93456789', 'ameerahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3665, 'Salim', 'Marhoon', 'Pharmacology', 'Burjeel Hospital ', '91234567', 'salimmarhoon@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (6768, 'Mazoon ', 'Salim', 'Surgical', 'Farq Health', '92345342', 'mazoonsalim@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9670, 'Maather', 'Khalid',  'Cardiology', 'Farq Health', '90192837', 'maatherkhalid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7172, 'Ahmed ', 'Salim', 'Pediatrics', 'Farq Health', '95643216', 'ahmedsalim@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7374, 'Bader', 'Tariq', 'Pharmacology', 'Daris Medical', '9019283', 'badertariq@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7567, 'Ali ', 'Jaber', 'Pediatrics', 'Daris Medical', '9768594', 'alijaber@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7778, 'Abdullah', 'Moosa', 'Surgical', 'Daris Medical', '91237654', 'abdullahmoosa@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7980, 'Saif ', 'Khalid', 'Pharmacology', 'Sultan Qaboos', '95643987', 'saifkhalid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8182, 'Mohammed', 'Ahmed', 'Pediatrics', 'Sultan Qaboos', '93451234', 'mohammedahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8384, 'Hassen', 'Hosain', 'Cardiology', 'Sultan Qaboos', '90982347', 'hassenhosain@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8586, 'Jinan', 'Abdullah',  'Cardiology', 'Muscat Private', '93456123', 'jinanabdullah@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8688, 'Salim', 'Bader', 'Surgical', 'Muscat Private', '92345678', 'salimbader@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8990, 'Ali', 'Anas', 'Pediatrics', 'Muscat Private', '99234876', 'alianas@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9192, 'Aseem', 'Tariq', 'Pharmacology', 'Muscat Private', '90167843', 'aseemtariq@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9394, 'Razan', 'Aseem', 'Pediatrics', 'NMC Speciality ', '98734562', 'razanaseem@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9596, 'Laith', 'Mohammed', 'Pharmacology', 'NMC Speciality ', '91234567', 'laithmohammed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9798, 'waleed', 'Ahmed', 'Pediatrics', 'NMC Speciality ', '90987654', 'waleedahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (9910, 'Samaher', 'Bader',  'Cardiology', 'Al Sharqia Hospital', '92349862', 'samaherbader@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1012, 'Asma', 'Mahmood', 'Pediatrics', 'Al Sharqia Hospital', '91276458', 'asmamahmood@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2234, 'Amal', 'Ali', 'Surgical', 'Al Sharqia Hospital', '90987634', 'amalali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7766, 'Hajer', 'Ali', 'Pharmacology', 'Al Sharqia Hospital', '98866442', 'hajerali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (3344, 'Abrar', 'Ali', 'Pediatrics', 'Bader AlSamaa', '91155347', 'abrarali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8899, 'Naemaa', 'Abdullah','Pharmacology', 'Bader AlSamaa', '91234455', 'naemaaabdullah@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2235, 'Noor', 'Rashid', 'Surgical', 'Bader AlSamaa', '92288456', 'noorrashid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2545, 'Hoor', 'Hilal', 'Pediatrics', 'Al Shumoos Hospital ', '90044876', 'hoorhilal@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2989, 'Rawan', 'Ahmed',  'Cardiology', 'Al Shumoos Hospital ', '92277445', 'rawanahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (4587, 'Rayan', 'Bader', 'Pharmacology', 'Al Shumoos Hospital ', '90984477', 'rayanbader@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (1978, 'Salim', 'Ali', 'Pediatrics', 'Al Shumoos Hospital ', '91174458', 'salimali@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2950, 'Ali', 'Khalid', 'Surgical', 'Jawharat AlSharqia', '92255345', 'alikhalid@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (8090, 'Bader', 'Ahmed', 'Pediatrics', 'Jawharat AlSharqia', '92345678', 'baderahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (7060, 'Mohammed', 'Ahmed', 'Pharmacology', 'Jawharat AlSharqia', '93456225', 'mohammedahmed@gmail.com');
+
+INSERT INTO Provider (provider_id, first_name, last_name, specialty, hospital_affiliation, contact_number, email)
+VALUES (2436, 'Sara', 'Ali',  'Cardiology', 'Jawharat AlSharqia', '99866445', 'saraali@gmail.com');
+
+

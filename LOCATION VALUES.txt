@@ -1,0 +1,65 @@
+CREATE TABLE LOCATION (
+  location_id CHAR(5) PRIMARY KEY,
+  hospital_id INT NOT NULL,
+  street VARCHAR2(40),
+  contact_number VARCHAR2(9),
+  CONSTRAINT fk_location FOREIGN KEY (hospital_id) REFERENCES hospital(hospital_id)
+);
+
+
+-- Updated dummy data for the LOCATION table
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L004', 200, 'Al Nahdha Street', '24421000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L005', 250, 'Royal Avenue', '24448000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L006', 300, 'Sohar Health Lane', '26851000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L007', 310, 'Bader Al Samaa Street', '23291000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L008', 340, 'Sultan Qaboos Road', '23291000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L009', 355, 'Al Ghubrah Avenue', '24491000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L010', 390, 'Muscat Private Street', '24461000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L011', 400, 'NMC Lane', '24481000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L012', 420, 'Qurm Boulevard', '24621000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L013', 430, 'Burjeel Street', '24621000');
+-- More dummy data for the LOCATION table
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L014', 466, 'Al Sharqia Avenue', '25511000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L015', 480, 'Bidiyah Health Street', '25521000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L016', 493, 'Barka Health Lane', '24491000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L017', 500, 'Sinaw Boulevard', '25531000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L018', 580, 'Nizwa Wellness Street', '25441000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L019', 570, 'Farq Health Avenue', '25451000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L020', 501, 'Daris Medical Lane', '25461000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L021', 515, 'Al Nahdha Street', '24421000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L022', 600, 'Royal Avenue', '24448000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L023', 604, 'Aster Al Raffah Street', '26851000');
+-- More dummy data for the LOCATION table
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L024', 618, 'Lifeline Lane', '26852000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L025', 620, 'Al Hayat International Boulevard', '24622000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L026', 635, 'Salalah Health Street', '23292000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L027', 640, 'Bader Al Samaa Avenue', '23293000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L028', 655, 'Sultan Qaboos Lane', '23294000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L029', 668, 'Al Ghubrah Wellness Street', '24492000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L030', 695, 'Muscat Private Avenue', '24463000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L031', 700, 'NMC Speciality Street', '24483000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L032', 712, 'Gulf Specialized Lane', '24623000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L033', 730, 'Burjeel Health Boulevard', '24624000');
+-- More dummy data for the LOCATION table
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L034', 759, 'Al Sharqia Wellness Street', '25512000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L035', 795, 'Al Sharqia Dental Avenue', '25522000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L036', 738, 'Al Shumoos Health Lane', '24493000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L037', 797, 'Jawharat AlSharqia Street', '25532000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L038', 841, 'Bader AlSamaa Avenue', '25442000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L039', 800, 'Farq Health Boulevard', '25452000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L040', 854, 'Daris Medical Lane', '25462000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L041', 1234, 'Lifeline Lane', '24422000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L042', 950, 'Al Hayat International Boulevard', '24625000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L043', 913, 'Lifeline Health Street', '23295000');
+-- More dummy data for the LOCATION table
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L044', 932, 'Sultan Qaboos Avenue', '23296000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L045', 954, 'Muscat Private Lane', '24464000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L046', 987, 'NMC Speciality Street', '24484000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L047', 999, 'Al Sharqia Wellness Boulevard', '25513000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L048', 895, 'Al Shumoos Health Lane', '24494000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L049', 890, 'Jawharat AlSharqia Street', '25533000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L050', 860, 'Bader AlSamaa Avenue', '25443000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L051', 999, 'Farq Health Boulevard', '25453000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L052', 999, 'Daris Medical Lane', '25463000');
+INSERT INTO LOCATION (location_id, hospital_id, street, contact_number) VALUES ('L053', 999, 'Lifeline Avenue', '24423000');
+

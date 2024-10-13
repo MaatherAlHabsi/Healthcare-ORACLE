@@ -1,0 +1,358 @@
+
+-- Create Patients table
+CREATE TABLE Patient (
+    patient_id CHAR(5) PRIMARY KEY,
+    first_name VARCHAR(10),
+    last_name VARCHAR(10),
+    date_of_birth DATE,
+    gender CHAR(6),
+    address VARCHAR(27),
+    phone_number VARCHAR(9),
+    email VARCHAR(35),
+    CONSTRAINT unique_email UNIQUE (email) -- Adding a unique constraint on the email column
+);
+
+
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1236, 'Ahmed', 'AlHadi', TO_DATE('1978-12-05', 'YYYY-MM-DD'), 'Male', 'Al Batinah, Sohar', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ahmed.alhadi@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1241, 'Omar', 'Khalid', TO_DATE('1987-09-15', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Athaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'omar.khalid@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1242, 'Lina', 'AlMansoori', TO_DATE('1991-12-08', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'lina.almansoori@email.com');
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1243, 'Faisal', 'AlAbdullah', TO_DATE('1980-04-03', 'YYYY-MM-DD'), 'Male', 'Ash Sharqiyah, Ibra', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'faisal.alabdullah@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1244, 'Layla', 'AlMazroui', TO_DATE('1994-08-22', 'YYYY-MM-DD'), 'Female', 'Al Dakhiliyah, Bahla', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.almazroui@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1245, 'Abdul', 'Rahman', TO_DATE('1975-02-17', 'YYYY-MM-DD'), 'Male', 'Dhofar, Salalah', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'Abdul.Rahman@email.com'); 
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1256, 'Sultan', 'AlSulaimi', TO_DATE('1989-02-25', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'sultan.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1311, 'Sultan', 'AlSulaimi', TO_DATE('1989-02-25', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'sultan.alsulaimi_new@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1312, 'Laila', 'AlMazroui', TO_DATE('1993-07-15', 'YYYY-MM-DD'), 'Female', 'Muscat, Al Azaiba', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'laila.almazroui_new@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1321, 'Omar', 'AlMansoori', TO_DATE('1990-03-18', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'omar.almansoori@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1322, 'Fatima', 'AlHarthy', TO_DATE('1985-08-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'fatima.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1323, 'Khalid', 'AlMazroui', TO_DATE('1982-12-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalid.almazroui@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1324, 'Aisha', 'AlSulaimi', TO_DATE('1995-04-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'aisha.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1325, 'Yousef', 'AlHarthy', TO_DATE('1988-11-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'yousef.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1326, 'Noor', 'AlMansoori', TO_DATE('1992-07-15', 'YYYY-MM-DD'), 'Female', 'Al Dhakhiliyah, Nizwa', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'noor.almansoori@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1327, 'Ahmad', 'AlSulaimi', TO_DATE('1980-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ahmad.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1328, 'Lina', 'AlHarthy', TO_DATE('1987-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'lina.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1329, 'Majid', 'AlMazroui', TO_DATE('1984-06-14', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'majid.almazroui@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1330, 'Amina', 'AlSulaimi', TO_DATE('1993-01-08', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Ibra', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'amina.alsulaimi@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1351, 'Salem', 'AlHadi', TO_DATE('1992-04-15', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'salem.alhadi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1352, 'Zahra', 'AlMazroui', TO_DATE('1987-08-22', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'zahra.almazroui@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1353, 'Hamad', 'AlHarthy', TO_DATE('1983-12-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'hamad.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1354, 'Amal', 'AlSulaimi', TO_DATE('1996-05-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'amal.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1355, 'Khalifa', 'AlHarthy', TO_DATE('1989-11-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalifa.alharthy@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1357, 'Jasim', 'AlSulaimi', TO_DATE('1981-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'jasim.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1358, 'Layla', 'AlHarthy', TO_DATE('1988-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.alharthy@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1361, 'Nasser', 'AlMansoori', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'nasser.almansoori@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1362, 'Huda', 'AlHarthy', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'huda.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1363, 'Tariq', 'AlMazroui', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'tariq.almazroui@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1364, 'Layla', 'AlSulaimi', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1365, 'Saeed', 'AlHarthy', TO_DATE('1988-02-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'saeed.alharthy@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1367, 'Khalid', 'AlSulaimi', TO_DATE('1980-03-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalid.alsulaimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1368, 'Maya', 'AlHarthy', TO_DATE('1987-10-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'maya.alharthy@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1369, 'Hassan', 'AlMazroui', TO_DATE('1984-07-14', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'hassan.almazroui@email.com');
+
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1371, 'Saif', 'AlHadi', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'saif.alhadi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1372, 'Hala', 'AlAbdullah', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'hala.alabdullah@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1373, 'Abdullah', 'AlKhatib', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'abdullah.alkhatib@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1374, 'Aisha', 'AlSaid', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'aisha.alsaid@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1375, 'Mohammed', 'AlFarsi', TO_DATE('1988-02-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'mohammed.alfarsi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1376, 'Layla', 'AlAmiri', TO_DATE('1992-08-15', 'YYYY-MM-DD'), 'Female', 'Al Dhakhiliyah, Nizwa', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.alamiri@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1377, 'Jafar', 'AlTawil', TO_DATE('1981-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'jafar.altawil@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1378, 'Lina', 'AlSharif', TO_DATE('1988-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'lina.alsharif@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1379, 'Majid', 'AlHarizi', TO_DATE('1984-06-14', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'majid.alharizi@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1381, 'Ali', 'AlBarwani', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ali.albarwani@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1382, 'Fatima', 'AlQasmi', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'fatima.alqasmi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1383, 'Yusuf', 'AlHarrasi', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'yusuf.alharrasi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1384, 'Latifa', 'AlToubi', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'latifa.altoubi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1385, 'Mubarak', 'AlMalki', TO_DATE('1988-02-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'mubarak.almalki@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1386, 'Noura', 'AlAbri', TO_DATE('1992-08-15', 'YYYY-MM-DD'), 'Female', 'Al Dhakhiliyah, Nizwa', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'noura.alabri@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1387, 'Khalid', 'AlRawahi', TO_DATE('1981-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalid.alrawahi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1388, 'Maha', 'AlMazrui', TO_DATE('1988-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'maha.almazrui@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1390, 'Aisha', 'AlShukaili', TO_DATE('1993-01-08', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Ibra', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'aisha.alshukaili@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1391, 'Ali', 'AlMahrizi', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ali.almahrizi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1392, 'Nadia', 'AlJabri', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'nadia.aljabri@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1393, 'Ahmed', 'AlSaidi', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ahmed.alsaidi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1394, 'Rasha', 'AlHinai', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'rasha.alhinai@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1395, 'Salem', 'AlKindi', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'salem.alkindi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1396, 'Layla', 'AlHosni', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.alhosni@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1397, 'Khalid', 'AlFarsi', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalid.alfarsi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1398, 'Fatima', 'AlHakimi', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'fatima.alhakimi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1399, 'Ahmed', 'AlMahrooqi', TO_DATE('1988-02-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'ahmed.almahrooqi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1400, 'Nadia', 'AlHarthi', TO_DATE('1992-08-15', 'YYYY-MM-DD'), 'Female', 'Al Dhakhiliyah, Nizwa', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'nadia.alharthi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1401, 'Saeed', 'AlRiyami', TO_DATE('1981-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'saeed.alriyami@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1402, 'Maha', 'AlWahaibi', TO_DATE('1988-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'maha.alwahaibi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1403, 'Hamad', 'AlMashari', TO_DATE('1984-06-14', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'hamad.almashari@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1404, 'Noura', 'AlTobi', TO_DATE('1993-01-08', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Ibra', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'noura.altobi@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1418, 'Hassan', 'AlAmri', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'hassan.alamri@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1419, 'Sara', 'AlHadi', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'sara.alhadi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1420, 'Mohammed', 'AlKharusi', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'mohammed.alkharusi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1421, 'Noor', 'AlZadjali', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'noor.alzadjali@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1422, 'Abdullah', 'AlTobi', TO_DATE('1988-02-22', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Azaiba', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'abdullah.altobi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1423, 'Layla', 'AlRiyami', TO_DATE('1992-08-15', 'YYYY-MM-DD'), 'Female', 'Al Dhakhiliyah, Nizwa', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'layla.alriyami@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1424, 'Khalid', 'AlHassan', TO_DATE('1981-02-10', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Khuwair', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'khalid.alhassan@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1425, 'Amira', 'AlFarsi', TO_DATE('1988-09-27', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'amira.alfarsi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1426, 'Mubarak', 'AlMazrui', TO_DATE('1984-06-14', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'mubarak.almazrui@email.com');
+
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1428, 'Saleh', 'AlHarrasi', TO_DATE('1990-06-25', 'YYYY-MM-DD'), 'Male', 'Muscat, Al Seeb', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'saleh.alharrasi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1429, 'Rasha', 'AlJabri', TO_DATE('1985-11-12', 'YYYY-MM-DD'), 'Female', 'Al Batinah, Sohar', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'rasha.aljabri@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1430, 'Tariq', 'AlSaidi', TO_DATE('1982-05-05', 'YYYY-MM-DD'), 'Male', 'Al Dhahirah, Ibri', '9'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'tariq.alsaidi@email.com');
+
+INSERT INTO Patient (patient_id, first_name, last_name, date_of_birth, gender, address, phone_number, email)
+VALUES
+    (1431, 'Maya', 'AlHinai', TO_DATE('1995-10-30', 'YYYY-MM-DD'), 'Female', 'Al Sharqiyah, Sur', '7'||LPAD(TRUNC(DBMS_RANDOM.VALUE(10000000, 99999999)), 7, '0'), 'maya.alHinai@email.com');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

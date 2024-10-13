@@ -1,0 +1,15 @@
+CREATE TABLE LAB_RESULTS_FACT (
+  result_id INT PRIMARY KEY,
+  patient_id CHAR(5),
+  location_id CHAR(5),
+  date_id INT,
+  test_name VARCHAR2(25),
+  result_value_numeric NUMBER,
+  result_value_units VARCHAR2(20),
+  reference_range_low NUMBER,
+  reference_range_high NUMBER,
+  
+  CONSTRAINT fk_patient_lab_results FOREIGN KEY (patient_id) REFERENCES PATIENT(patient_id),
+  CONSTRAINT fk_location_lab_results FOREIGN KEY (location_id) REFERENCES LOCATION(location_id),
+  CONSTRAINT fk_date_lab_results FOREIGN KEY (date_id) REFERENCES TIME(date_id)
+);

@@ -1,0 +1,110 @@
+CREATE TABLE Claim_junk  (
+
+    Claim_Indicator_key INT PRIMARY KEY,
+
+    claim_type VARCHAR(10), 
+
+    claim_status VARCHAR(10) 
+
+);   
+
+
+INSERT INTO Claim_junk VALUES(1, 'Medical', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (2, 'Dental', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (3, 'Vision', 'Denied');
+
+INSERT INTO Claim_junk VALUES    (4, 'Medical', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (5, 'Vision', 'Pending');
+
+INSERT INTO Claim_junk VALUES    (6, 'Dental', 'Denied');
+
+INSERT INTO Claim_junk VALUES    (7, 'Medical', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (8, 'Vision', 'Pending');
+
+INSERT INTO Claim_junk VALUES    (9, 'Dental', 'Denied');
+
+INSERT INTO Claim_junk VALUES    (10, 'Medical', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (11, 'Vision', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (12, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (13, 'Medical', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (14, 'Vision', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (15, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (16, 'Orthopedic', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (17, 'Emergency', 'Approved');
+
+  INSERT INTO Claim_junk VALUES  (18, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (19, 'Medical', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (20, 'Vision', 'Pending');
+
+INSERT INTO Claim_junk VALUES      (21, 'Orthopedic', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (22, 'Emergency', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (23, 'Medical', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (24, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (25, 'Vision', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (26, 'Orthopedic', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (27, 'Emergency', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (28, 'Medical', 'Pending');
+
+INSERT INTO Claim_junk VALUES    (29, 'Dental', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (30, 'Vision', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (31, 'Orthopedic', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (32, 'Emergency', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (33, 'Medical', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (34, 'Dental', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (35, 'Vision', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (36, 'Orthopedic', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (37, 'Emergency', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (38, 'Medical', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (39, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (40, 'Vision', 'Approved');
+
+INSERT INTO Claim_junk VALUES (41, 'Orthopedic', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (42, 'Emergency', 'Pending');
+
+INSERT INTO Claim_junk VALUES    (43, 'Medical', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (44, 'Dental', 'Approved');
+
+ INSERT INTO Claim_junk VALUES   (45, 'Vision', 'Pending');
+
+ INSERT INTO Claim_junk VALUES   (46, 'Orthopedic', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (47, 'Emergency', 'Pending');
+
+INSERT INTO Claim_junk VALUES    (48, 'Medical', 'Approved');
+
+INSERT INTO Claim_junk VALUES    (49, 'Dental', 'Denied');
+
+ INSERT INTO Claim_junk VALUES   (50, 'Vision', 'Approved');
